@@ -1,0 +1,756 @@
+* {
+  /* position: absolute; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* overflow-x: hidden ; */
+  /* position: absolute; */
+  background-color: black;
+  /* width: 100%; */
+  /* max-width:10000vw;
+    width: 100%; */
+}
+.whole {
+  /* position: absolute; */
+  background-image: url(assets/images/IN-en-20240219-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  max-width: 1000vw;
+  width: 100%;
+  height: 80vh;
+}
+.box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  opacity: 0.54;
+}
+.navbar {
+  /* position:absolute; */
+  max-width: 50vw;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.navbar img {
+  height: 15vh;
+  width: 10vw;
+  position: relative;
+  z-index: 102;
+
+  /* color: red; */
+}
+.navbar img:hover {
+  width: 11vw;
+}
+@media (max-width: 498px) {
+  .btn {
+    font-size: 1.5vw;
+  }
+  .btn-red {
+    font-size: 1.5vw;
+  }
+}
+.btn {
+  /* position: absolute; */
+  position: relative;
+  z-index: 10;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  /* font-size: 1vw; */
+}
+.btn-red {
+  position: relative;
+  /* position: relative; */
+  z-index: 10;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+}
+.btn-red:hover {
+  font-size: 14px;
+}
+.btn:hover {
+  font-size: 14px;
+}
+.btn-red2 {
+  position: relative;
+  /* position: relative; */
+  z-index: 10;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.btn-red2:hover {
+  font-size: 14px;
+}
+
+.seperator {
+  position: absolute;
+  background-color: grey;
+  height: 1vh;
+  max-width: 1000vw;
+  width: 100%;
+  z-index: 100;
+}
+
+.text {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+/* .text span1:hover{font-size: 4.5vw;} */
+.text :nth-child(1) {
+  position: relative;
+  font-size: 4vw;
+  font-weight: bolder;
+  z-index: 10;
+
+  color: white;
+}
+.text :nth-child(2) {
+  position: relative;
+  display: flex;
+  font-weight: 900;
+  font-size: 2vw;
+  justify-content: center;
+  z-index: 10;
+  color: white;
+}
+/* .text span2:hover{font-size: 2.5vw;} */
+.text :nth-child(3) {
+  position: relative;
+  display: flex;
+  font-size: 2vw;
+  font-weight: 900;
+  justify-content: center;
+  z-index: 10;
+  color: white;
+}
+/* .text span3:hover{font-size: 2.5vw;} */
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -8vh;
+  /* top:70vh;
+    left:38vw; */
+}
+@media (max-width: 498px) {
+  .btn-red2 {
+    font-size: 1.5vw;
+  }
+  .textbox1 {
+    font-size: 1.5vw;
+    width: 13vw;
+    height: 3vh;
+  }
+}
+input {
+  padding: 4px;
+  position: relative;
+  height: 5vh;
+  border-radius: 5px;
+  background-color: rgba(127, 132, 136, 0.514);
+}
+::placeholder {
+  /* text-align:start; */
+
+  color: rgb(255, 236, 236);
+}
+.bigbox1 {
+  position: relative;
+  /* border:10px solid red; */
+  display: flex;
+  color: white;
+}
+
+.bigbox1 img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  /* border:10px solid red; */
+  right: 0%;
+  z-index: 10;
+}
+.bigbox1 video {
+  position: absolute;
+  width: 40%;
+  height: 53%;
+  left: 55%;
+  top: 22%;
+}
+.bigbox1 .spanbox {
+  position: relative;
+  width: 50%;
+  display: flex;
+  /* max-height:50%; */
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display:inline-block; */
+}
+.bigbox1 .spanbox span:nth-child(1) {
+  position: relative;
+  width: 50vw;
+  display: block;
+  /* width: 100%; */
+  font-size: 50px;
+  font-weight: bolder;
+  left: 12%;
+  top: 25%;
+  /* white-space: nowrap; */
+}
+.bigbox1 .spanbox span:nth-child(2) {
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  font-size: 25px;
+  font-weight: 100;
+  top: 53%;
+  /* white-space: nowrap; */
+  right: 29%;
+}
+@media screen and (max-width: 1130px) {
+  .bigbox1 .spanbox span:nth-child(1) {
+    font-size: 40px;
+  }
+  .bigbox1 .spanbox span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .bigbox1 .spanbox span:nth-child(1) {
+    font-size: 14px;
+  }
+  .bigbox1 .spanbox span:nth-child(2) {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bigbox1 .spanbox span:nth-child(1) {
+    font-size: 12px;
+  }
+  .bigbox1 .spanbox span:nth-child(2) {
+    font-size: 8px;
+  }
+}
+.bigbox3 {
+  position: relative;
+  /* border:10px solid red; */
+  display: flex;
+  color: white;
+}
+
+.bigbox3 img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  /* border:10px solid red; */
+  right: 0%;
+  z-index: 10;
+}
+.bigbox3 video {
+  position: absolute;
+  width: 40%;
+  height: 45%;
+  left: 55%;
+  top: 22%;
+}
+.bigbox3 .spanbox {
+  position: relative;
+  width: 50%;
+  display: flex;
+  /* max-height:50%; */
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display:inline-block; */
+}
+.bigbox3 .spanbox span:nth-child(1) {
+  position: relative;
+  width: 50vw;
+  display: block;
+  /* width: 100%; */
+  font-size: 50px;
+  font-weight: bolder;
+  left: 15%;
+  top: 25%;
+  /* white-space: nowrap; */
+}
+.bigbox3 .spanbox span:nth-child(2) {
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  font-size: 25px;
+  font-weight: 100;
+  top: 53%;
+  /* white-space: nowrap; */
+  right: 29%;
+}
+@media screen and (max-width: 1130px) {
+  .bigbox3 .spanbox span:nth-child(1) {
+    font-size: 40px;
+  }
+  .bigbox3 .spanbox span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .bigbox3 .spanbox span:nth-child(1) {
+    font-size: 14px;
+  }
+  .bigbox3 .spanbox span:nth-child(2) {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bigbox3 .spanbox span:nth-child(1) {
+    font-size: 12px;
+    /* width:100px; */
+  }
+  .bigbox3 .spanbox span:nth-child(2) {
+    font-size: 9px;
+    left: -25%;
+  }
+}
+.bigbox2 {
+  position: relative;
+  /* border:10px solid red; */
+  display: flex;
+  color: white;
+}
+
+.bigbox2 img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  /* border:10px solid red; */
+  right: 50%;
+  z-index: 10;
+}
+/* .bigbox2 video
+{
+    position: absolute;
+    width:40%;
+    height:53%;
+    left:55%;
+    top:22%
+
+} */
+.bigbox2 .spanbox {
+  position: relative;
+  width: 50%;
+  display: flex;
+  /* max-height:50%; */
+  display: flex;
+  left: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display:inline-block; */
+}
+.bigbox2 .spanbox span:nth-child(1) {
+  position: relative;
+  width: 60vw;
+  display: block;
+  /* width: 100%; */
+  font-size: 50px;
+  font-weight: bolder;
+  left: 20%;
+  top: 17%;
+  /* white-space: nowrap; */
+}
+.bigbox2 .spanbox span:nth-child(2) {
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  font-size: 25px;
+  font-weight: 100;
+  top: 55%;
+  /* white-space: nowrap; */
+  right: 33%;
+}
+@media screen and (max-width: 1130px) {
+  .bigbox2 .spanbox span:nth-child(1) {
+    font-size: 40px;
+  }
+  .bigbox2 .spanbox span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .bigbox2 .spanbox span:nth-child(1) {
+    font-size: 14px;
+  }
+  .bigbox2 .spanbox span:nth-child(2) {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bigbox2 .spanbox span:nth-child(1) {
+    font-size: 12px;
+    left: 10%;
+    top: 23%;
+  }
+  .bigbox2 .spanbox span:nth-child(2) {
+    font-size: 9px;
+    right: 40%;
+  }
+}
+.bigbox4 {
+  position: relative;
+  /* border:10px solid red; */
+  display: flex;
+  color: white;
+}
+
+.bigbox4 img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  /* border:10px solid red; */
+  right: 45%;
+  /* top:20%; */
+  z-index: 10;
+}
+/* .bigbox2 video
+{
+    position: absolute;
+    width:40%;
+    height:53%;
+    left:55%;
+    top:22%
+
+} */
+.bigbox4 .spanbox {
+  position: relative;
+  width: 50%;
+  display: flex;
+  /* max-height:50%; */
+  display: flex;
+  left: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display:inline-block; */
+}
+.bigbox4 .spanbox span:nth-child(1) {
+  position: relative;
+  width: 100vw;
+  display: block;
+  /* width: 100%; */
+  font-size: 50px;
+  font-weight: bolder;
+  left: 20%;
+  top: 25%;
+  /* white-space: nowrap; */
+}
+.bigbox4 .spanbox span:nth-child(2) {
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  font-size: 25px;
+  font-weight: 100;
+  top: 52%;
+  /* white-space: nowrap; */
+  right: 31%;
+}
+@media screen and (max-width: 1130px) {
+  .bigbox4 .spanbox span:nth-child(1) {
+    font-size: 40px;
+  }
+  .bigbox4.spanbox span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .bigbox4 .spanbox span:nth-child(1) {
+    font-size: 14px;
+  }
+  .bigbox4 .spanbox span:nth-child(2) {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bigbox4 .spanbox span:nth-child(1) {
+    font-size: 12px;
+  }
+  .bigbox4 .spanbox span:nth-child(2) {
+    font-size: 8px;
+  }
+}
+.bigbox5 {
+  /* background-color: black; */
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.bigbox5 h1 {
+  position: absolute;
+  top: 30px;
+}
+@media screen and (max-width:400px){
+    .bigbox5 h1 {
+        position: absolute;
+        top: 30px;
+        font-size: 25px;
+      }
+    
+}
+
+.bigbox5 .accordion1 {
+  position: absolute;
+  /* border: 1px solid white; */
+  background-color: rgb(102, 100, 100);
+  border-radius: 5px;
+  /* margin: 10px 0px; */
+  /* padding: 10px 180px; */
+  display: flex;
+  width:60vw;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  top:20vh;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.bigbox5 .accordion2 {
+  position: absolute;
+  background-color: rgb(102, 100, 100);
+  border-radius: 5px;
+  /* border: 1px solid white; */
+  /* margin: 10px 0px; */
+  /* padding: 10px 180px; */
+  display: flex;
+  font-size: 20px;
+  font-weight: 900;
+  width:60vw;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  top:35vh;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.bigbox5 .accordion3 {
+  position: absolute;
+  background-color: rgb(102, 100, 100);
+  border-radius: 5px;
+  /* border: 1px solid white; */
+  /* margin: 10px 0px; */
+  /* padding: 10px 180px; */
+  display: flex;
+  width:60vw;
+  font-size: 20px;
+  font-weight: 900;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  top:50vh;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.bigbox5 .accordion4 {
+    background-color: rgb(102, 100, 100);
+    border-radius: 5px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 900;
+  /* border: 1px solid white; */
+  /* margin: 10px 0px; */
+  /* padding: 10px 180px; */
+  display: flex;
+  width:60vw;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  top:65vh;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.plus1
+{
+    background-color:rgb(102, 100, 100);
+    z-index: 100;
+    position: relative;
+    
+}
+.plus1:hover
+{
+    background-color: #838282;
+}
+.plus2
+{
+    background-color:rgb(102, 100, 100);
+    z-index: 100;
+    position: relative;
+    
+}
+.plus2:hover
+{
+    background-color: #838282;
+}
+.plus3
+{
+    background-color:rgb(102, 100, 100);
+    z-index: 100;
+    position: relative;
+    
+}
+.plus3:hover
+{
+    background-color: #838282;
+}
+.plus4
+{
+    background-color:rgb(102, 100, 100);
+    z-index: 100;
+    position: relative;
+    
+}
+.plus4:hover
+{
+    background-color: #838282;
+}
+.accordion1:hover
+{
+    font-size: 22px;
+    width: 61vw;
+    height: 11vh;
+    background-color: #838282;
+    
+}
+.accordion2:hover
+{
+    font-size: 22px;
+    width: 61vw;
+    height: 11vh;
+    background-color: #838282;
+}
+.accordion3:hover
+{
+    font-size: 22px;
+    width: 61vw;
+    height: 11vh;
+    background-color: #838282;
+}
+.accordion4:hover
+{
+    font-size: 22px;
+    width: 61vw;
+    height: 11vh;
+    background-color: #838282;
+}
+.accordion4:hover
+{
+    font-size: 22px;
+    width: 61vw;
+    height: 11vh;
+    background-color: #838282;
+}
+
+.bigbox6
+
+{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    bottom: 0;
+    align-content: stretch;
+    justify-items: center;
+    padding: 10px;
+    margin: 22px;
+    gap: 17px;
+}
+.bigbox6 span
+{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:400px){
+    .bigbox6 span
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666; /* Set the color of the scrollbar thumb to a greyish color */
+}
+
+::-webkit-scrollbar-track {
+  background-color: black; /* Set the color of the scrollbar track (the area behind the thumb) */
+}
+
+/* For Firefox */
+/* Note: Firefox currently doesn't support styling the scrollbar, but you can use this for future compatibility */
+/* For Firefox Quantum (>= 64) */
+html {
+  scrollbar-color: #666 black;
+}
+
+/* For Firefox (version < 64) */
+html {
+  scrollbar-face-color: #666;
+  scrollbar-track-color: black;
+}
+
+/* For Internet Explorer and Edge */
+/* Note: Internet Explorer and Edge currently don't support styling the scrollbar */
+/* You can use this for future compatibility */
+/* The values are example values, you might need to adjust them based on your design */
+html {
+  scrollbar-3dlight-color: #666;
+  scrollbar-highlight-color: #666;
+  scrollbar-face-color: #666;
+  scrollbar-shadow-color: #666;
+  scrollbar-darkshadow-color: #666;
+}
